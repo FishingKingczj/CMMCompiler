@@ -1,0 +1,11 @@
+//测试while
+while (a == 3) {
+    a = 1;
+}
+//测试if
+if (b <> 4) {
+    b = 2;
+}
+//测试for
+for(int i = 1; i < 100; i = i + 1)
+    a=b;

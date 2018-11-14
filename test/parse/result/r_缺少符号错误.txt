@@ -1,0 +1,37 @@
+└ program
+  └ statement
+    └ declare_stm
+      └ INT
+      └ ERROR
+      └ ERROR
+      └ ERROR
+      └ ERROR
+  └ statement
+    └ assign_stm
+      └ ID
+      └ ERROR
+      └ ERROR
+      └ ERROR
+  └ statement
+    └ assign_stm
+      └ ID
+      └ ASSIGN
+      └ ERROR
+      └ SEMI
+  └ statement
+    └ declare_stm
+      └ BOOL
+      └ ID
+      └ ASSIGN
+      └ right_value
+        └ expression
+          └ TRUE
+      └ ERROR
+
+
+------------------------------
+Errors:
+ParserError: line 1 position 1，符号"int" :声明语句 缺少: "标识符"
+ParserError: line 2 position 1，符号"c" :赋值语句 缺少: "="
+ParserError: line 3 position 2，符号"=" :赋值语句 缺少: 右值
+ParserError: line 4 position 4，符号"true" :声明语句 缺少: ";"

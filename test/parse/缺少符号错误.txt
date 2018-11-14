@@ -1,0 +1,4 @@
+int;
+c;
+c=;
+bool e = true

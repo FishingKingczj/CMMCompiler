@@ -1,0 +1,53 @@
+COM 
+INT ID ASSIGN NUM_INT SEMI 
+REAL ID ASSIGN NUM_REAL SEMI 
+BOOL ID ASSIGN TRUE SEMI 
+BOOL ID ASSIGN FALSE SEMI 
+
+COM 
+INT ID ASSIGN ID ADD ID SEMI 
+REAL ID ASSIGN ID MINUS ID MUL ID DIV ID SEMI 
+
+COM 
+WHILE LPAREN ID EQ NUM_INT RPAREN LBRACE 
+IF LPAREN ID NEQ NUM_REAL RPAREN LBRACE 
+IF LPAREN ID GT ID RPAREN 
+ID ASSIGN NUM_INT SEMI 
+RBRACE ELSE LBRACE 
+IF LPAREN ID LT ID RPAREN 
+INT ID LBRACKET NUM_INT RBRACKET SEMI 
+RBRACE 
+RBRACE 
+
+COM 
+READ LPAREN ID RPAREN SEMI 
+WRITE LPAREN ID RPAREN SEMI 
+
+COM 
+COM 
+COM 
+COM 
+COM 
+
+COM 
+ID ERROR ID 
+
+COM 
+ERROR 
+ERROR 
+
+COM 
+ERROR 
+
+COM 
+ERROR 
+ERROR 
+
+------------------------------
+Errors:
+LexerError: line 33 position 2, symbol "@" :无法识别的符号
+LexerError: line 36 position 1, symbol "_a" :错误的标识符
+LexerError: line 37 position 1, symbol "a_" :错误的标识符
+LexerError: line 40 position 1, symbol "00012" :错误的整数
+LexerError: line 43 position 1, symbol "0.9.0.8" :错误的实数
+LexerError: line 44 position 1, symbol "000.1" :错误的实数

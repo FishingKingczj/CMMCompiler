@@ -1,0 +1,44 @@
+//测试int real bool 标识符 数字 赋值 true false
+int a = 3;
+real b = 1.0;
+bool c = true;
+bool d = false;
+
+//测试运算符 测试标识符
+int c0d = a + b;
+real e_f = c0d - b * a / c0d;
+
+//测试while if else 括号 判断符
+while (a == 3) {
+    if (b <> 2.0) {
+        if (a > b)
+            a = 4;
+    } else {
+        if (c0d < e_f)
+            int arr[5];
+    }
+}
+
+//测试read write
+read(a);
+write(c0d);
+
+//测试多行注释
+/* 这是注释 ***
+这是注释 ***
+这是注释 ***
+这是注释 */
+
+//测试无法识别的符号
+a@b
+
+//错误的标识符
+_a
+a_
+
+//错误的整数
+00012
+
+//错误的实数
+0.9.0.8
+000.1

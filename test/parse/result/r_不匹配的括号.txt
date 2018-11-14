@@ -1,0 +1,82 @@
+└ program
+  └ statement
+    └ while_stm
+      └ WHILE
+      └ LPAREN
+      └ condition
+        └ expression
+          └ term
+            └ factor
+              └ ID
+        └ comparison_op
+          └ EQ
+        └ expression
+          └ term
+            └ factor
+              └ NUM_INT
+      └ RPAREN
+      └ LBRACE
+      └ statement
+        └ if_stm
+          └ IF
+          └ LPAREN
+          └ condition
+            └ expression
+              └ term
+                └ factor
+                  └ ID
+            └ comparison_op
+              └ EQ
+            └ expression
+              └ term
+                └ factor
+                  └ NUM_INT
+          └ RPAREN
+          └ LBRACE
+          └ statement
+            └ while_stm
+              └ WHILE
+              └ LPAREN
+              └ condition
+                └ expression
+                  └ term
+                    └ factor
+                      └ ID
+                └ comparison_op
+                  └ EQ
+                └ expression
+                  └ term
+                    └ factor
+                      └ NUM_INT
+              └ RPAREN
+              └ LBRACE
+              └ statement
+                └ assign_stm
+                  └ ID
+                  └ ASSIGN
+                  └ right_value
+                    └ expression
+                      └ term
+                        └ factor
+                          └ NUM_INT
+                  └ SEMI
+              └ RBRACE
+          └ ERROR
+          └ ERROR
+      └ statement
+        └ assign_stm
+          └ ID
+          └ ASSIGN
+          └ right_value
+            └ expression
+              └ term
+                └ factor
+                  └ NUM_INT
+          └ SEMI
+      └ ERROR
+
+
+------------------------------
+Errors:
+ParserError: line 6 position 1，符号"}" :IF语句 缺少: "}"
+ParserError: line 7 position 5，符号";" :WHILE语句 缺少: "}"

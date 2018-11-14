@@ -1,0 +1,4 @@
+//测试read write
+read(a);
+write(b);
+write(a + b);
